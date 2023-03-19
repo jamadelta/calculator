@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Калькулятор</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container dop">
+  <h1 class="navbar-brand">РЕАЛЬНО ПРИЯТНЫЙ ГЛАЗАМ КАЛЬКУЛЯТОР</h1>
+  <a class="nav-link active text-light" href="https://kwork.ru/frontend/25905371/adaptivnaya-verstka-sayta">об авторе...</a>
+  </div>
+</nav>
+<div class="container text-center">
+  <p>number 1 <input type="text" id="n1"></p>
+<label>
+<p>number 2 <input type="text" id="n2"></p>
+<p class="hint">-если действие не требует 2x значений, то оставьте это поле пустым</p>
+</label>
+<br>
+<div class="dop-cont">
+<div class="buttons-cont col-md-3">
+<button class="btn btn-secondary" onclick="plus()">+</button>
+<button class="btn btn-secondary" onclick="minus()">-</button>
+<button class="btn btn-secondary" onclick="multiplication()">X</button>
+<button class="btn btn-secondary" onclick="division()">/</button>
+<button class="btn btn-dop btn-secondary" onclick="cos()">cos</button>
+<button class="btn btn-secondary" onclick="degree()">aˣ</button>
+<button class="btn btn-secondary" onclick="root()">√a</button>
+<button class="btn btn-secondary" onclick="percent()">%</button>
+<button class="btn btn-secondary" onclick="fac()">x!</button>
+<button class="btn btn-dop btn-secondary" onclick="sin()">sin</button>
+
+</div>
+</div>
+<hr>
+<p>Result: <span id="out"></span></p>
+</div>
+<br>
+
+  <script src="node.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
